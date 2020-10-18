@@ -65,16 +65,12 @@ class BoardX: UIImageView {
      */
     func createTextField(id: Int) -> PainterTextField {
         let tv = PainterTextField(id: id, dele: self)
-        
-        
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
         tv.addGestureRecognizer(panGesture)
         return tv
     }
     
-    /**
-     
-     */
+
     @objc func handlePanGesture(sender: UIPanGestureRecognizer) {
         let point = sender.location(in: self)
         if point.y < 0 || point.y > self.bounds.size.height {
