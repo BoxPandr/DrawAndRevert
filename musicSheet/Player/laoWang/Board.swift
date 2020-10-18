@@ -29,9 +29,6 @@ class BoardX: UIImageView {
     
     var isTextModeOpen = false
     
-    var path = UIBezierPath()
-    
-    
     var boundary = true
     
     var ctx: CGContext?
