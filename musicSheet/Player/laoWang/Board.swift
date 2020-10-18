@@ -105,13 +105,13 @@ class BoardX: UIImageView {
         if stdY > ggY{
             stdY = ggY
         }
-        var fuck = false
+        var goodCondition = false
         if relativeOldY.y > stdY{
             reY.y = stdY
             y = oldY + reY.y - relativeOldY.y
             print(y)
             if boundary{
-                fuck = true
+                goodCondition = true
                 boundary = false
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     self.boundary = true
@@ -122,9 +122,9 @@ class BoardX: UIImageView {
         sender.view?.center = CGPoint(x: x, y: y)
         sender.setTranslation(.zero, in: self)
         if sender.state == UIPanGestureRecognizer.State.ended{
-            fuck = true
+            goodCondition = true
         }
-        if fuck, let origin = sender.view?.frame.origin{
+        if goodCondition, let origin = sender.view?.frame.origin{
             let tf = sender.view as! PainterTextField
             
             let item = PaintItem(id: tf.id_Dng, action: 3, pointList: nil, text: nil, pos: origin.toMyPoint())
@@ -364,8 +364,8 @@ extension BoardX{
                 return
             }
             
-            for cao in touches{
-                let judgeTouch = cao.location(in: self)
+            for oneTouch in touches{
+                let judgeTouch = oneTouch.location(in: self)
                 if judgeTouch.y >= self.height {
                     self.drawingState = .ended
                     continue
@@ -440,8 +440,8 @@ extension BoardX{
         brush.lastPoint = brush.endPoint
         let lastP = actionDotsQueue.last
         actionDotsQueue.removeAll()
-        if let cao = lastP{
-            actionDotsQueue.append(cao)
+        if let oneTouch = lastP{
+            actionDotsQueue.append(oneTouch)
         }
     }
     

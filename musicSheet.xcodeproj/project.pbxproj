@@ -117,7 +117,6 @@
 		26FBF78D231F8BBB00615C08 /* ButtonAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FBF78C231F8BBB00615C08 /* ButtonAdd.swift */; };
 		26FCCAE624E27B2200AFCB42 /* DrawManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCCAE524E27B2200AFCB42 /* DrawManager.swift */; };
 		26FCCAEA24E27D2100AFCB42 /* BottomPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCCAE924E27D2100AFCB42 /* BottomPaletteView.swift */; };
-		26FCCAF224E2854400AFCB42 /* PlayerCtrlDraw.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCCAF124E2854400AFCB42 /* PlayerCtrlDraw.swift */; };
 		26FCCAF524E2886000AFCB42 /* BottomPaletteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCCAF324E2886000AFCB42 /* BottomPaletteButton.swift */; };
 		26FCCAF624E2886000AFCB42 /* BottomPaletteButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26FCCAF424E2886000AFCB42 /* BottomPaletteButton.xib */; };
 		26FCCB0524E28D3A00AFCB42 /* BottomPalettePlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FCCB0324E28D3A00AFCB42 /* BottomPalettePlaceHolder.swift */; };
@@ -300,7 +299,6 @@
 		26FBF78C231F8BBB00615C08 /* ButtonAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAdd.swift; sourceTree = "<group>"; };
 		26FCCAE524E27B2200AFCB42 /* DrawManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawManager.swift; sourceTree = "<group>"; };
 		26FCCAE924E27D2100AFCB42 /* BottomPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPaletteView.swift; sourceTree = "<group>"; };
-		26FCCAF124E2854400AFCB42 /* PlayerCtrlDraw.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCtrlDraw.swift; sourceTree = "<group>"; };
 		26FCCAF324E2886000AFCB42 /* BottomPaletteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPaletteButton.swift; sourceTree = "<group>"; };
 		26FCCAF424E2886000AFCB42 /* BottomPaletteButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomPaletteButton.xib; sourceTree = "<group>"; };
 		26FCCB0324E28D3A00AFCB42 /* BottomPalettePlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPalettePlaceHolder.swift; sourceTree = "<group>"; };
@@ -662,7 +660,6 @@
 				26442EC624F7500600138D9F /* PaintingControl.swift */,
 				26C7A4A324F4FEA1006C2482 /* UserMark */,
 				262EE4992336DDA700F1A9FC /* PlayerViewCtrlListProxyAdd.swift */,
-				26FCCAF124E2854400AFCB42 /* PlayerCtrlDraw.swift */,
 				26C7A4A624F50053006C2482 /* PlayerSideMarking.swift */,
 			);
 			path = Controller;
@@ -1031,7 +1028,6 @@
 				26F0BF7F2313E9CE00758E85 /* ViewAdd.swift in Sources */,
 				26442EC424F74F8A00138D9F /* PainterTextField.swift in Sources */,
 				26C7A4A724F50053006C2482 /* PlayerSideMarking.swift in Sources */,
-				26FCCAF224E2854400AFCB42 /* PlayerCtrlDraw.swift in Sources */,
 				2671AF0B23065D8F00BFBB18 /* AppDelegate.swift in Sources */,
 				26FE864B24E3D59A002B1FF1 /* DrawingSaveCover.swift in Sources */,
 				26FCCB0924E28FF000AFCB42 /* DrawBottomLayout.swift in Sources */,
