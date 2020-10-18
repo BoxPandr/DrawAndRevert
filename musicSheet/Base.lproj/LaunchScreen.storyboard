@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch_piano_key" translatesAutoresizingMaskIntoConstraints="NO" id="hnB-c4-lqR">
+                                <rect key="frame" x="0.0" y="570" width="1024" height="198"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hnB-c4-lqR" secondAttribute="height" multiplier="1024:198" id="AJs-8B-cbz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好多曲谱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e4f-pO-MDF">
+                                <rect key="frame" x="439.5" y="307" width="145" height="51"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="36"/>
+                                <color key="textColor" name="Main"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-OL-RBF">
+                                <rect key="frame" x="0.0" y="397" width="1024" height="173"/>
+                                <color key="backgroundColor" red="1" green="0.16078431372549018" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bvQ-OL-RBF" secondAttribute="height" multiplier="1024:173" id="lJ5-kT-evw"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch_use_tip" translatesAutoresizingMaskIntoConstraints="NO" id="vCn-EX-ema">
+                                <rect key="frame" x="255.5" y="461" width="501" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vCn-EX-ema" secondAttribute="height" multiplier="501:53" id="aSo-it-AF6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch_music_note" translatesAutoresizingMaskIntoConstraints="NO" id="VyD-qQ-a3t">
+                                <rect key="frame" x="786.5" y="436" width="36" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="RcB-3F-ubC"/>
+                                    <constraint firstAttribute="height" constant="41" id="j8y-7G-j0y"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch_score_note" translatesAutoresizingMaskIntoConstraints="NO" id="kSN-tq-9XQ">
+                                <rect key="frame" x="187.5" y="508" width="33" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Qvc-YJ-uRT"/>
+                                    <constraint firstAttribute="width" constant="33" id="e8n-iO-wxT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch_app_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Vci-lO-OKw">
+                                <rect key="frame" x="418" y="87" width="188" height="188"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="188" id="I2e-sS-Zdb"/>
+                                    <constraint firstAttribute="width" secondItem="Vci-lO-OKw" secondAttribute="height" id="aB5-wc-OJf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="e4f-pO-MDF" firstAttribute="top" secondItem="Vci-lO-OKw" secondAttribute="bottom" constant="32" id="7fm-kQ-4lz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hnB-c4-lqR" secondAttribute="bottom" id="9JM-cb-wu5"/>
+                            <constraint firstItem="hnB-c4-lqR" firstAttribute="top" secondItem="bvQ-OL-RBF" secondAttribute="bottom" id="9Pz-HU-dVn"/>
+                            <constraint firstItem="e4f-pO-MDF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IuU-QV-k2a"/>
+                            <constraint firstItem="bvQ-OL-RBF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JBP-e0-igZ"/>
+                            <constraint firstItem="vCn-EX-ema" firstAttribute="width" secondItem="bvQ-OL-RBF" secondAttribute="width" multiplier="501:1024" id="LdE-oq-OWl"/>
+                            <constraint firstItem="kSN-tq-9XQ" firstAttribute="top" secondItem="vCn-EX-ema" secondAttribute="top" constant="47" id="Mcc-9Z-kIc"/>
+                            <constraint firstItem="Vci-lO-OKw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Naq-02-zXQ"/>
+                            <constraint firstItem="VyD-qQ-a3t" firstAttribute="leading" secondItem="vCn-EX-ema" secondAttribute="trailing" constant="30" id="PEN-Is-oW0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bvQ-OL-RBF" secondAttribute="trailing" id="VKs-XF-SEj"/>
+                            <constraint firstItem="hnB-c4-lqR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bKP-m6-EbO"/>
+                            <constraint firstItem="vCn-EX-ema" firstAttribute="top" secondItem="bvQ-OL-RBF" secondAttribute="top" constant="64" id="fDs-eZ-62X"/>
+                            <constraint firstItem="Vci-lO-OKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="87" id="fw1-OC-KeN"/>
+                            <constraint firstItem="vCn-EX-ema" firstAttribute="leading" secondItem="kSN-tq-9XQ" secondAttribute="trailing" constant="35" id="kep-pf-a24"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hnB-c4-lqR" secondAttribute="trailing" id="osd-zX-13V"/>
+                            <constraint firstItem="vCn-EX-ema" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-6" id="uHZ-q1-nH7"/>
+                            <constraint firstItem="VyD-qQ-a3t" firstAttribute="top" secondItem="vCn-EX-ema" secondAttribute="top" constant="-25" id="ve3-24-cRI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.734375" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Launch_app_icon" width="187.5" height="187.5"/>
+        <image name="Launch_music_note" width="36" height="41"/>
+        <image name="Launch_piano_key" width="1024" height="197.5"/>
+        <image name="Launch_score_note" width="33" height="38.5"/>
+        <image name="Launch_use_tip" width="501.5" height="53"/>
+        <namedColor name="Main">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MapPiece" id="gTV-IL-0wX" customClass="MapPiece" customModule="好多曲谱HD" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="725" height="284"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="725" height="284"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfx-DG-Mhe" userLabel="container">
+                        <rect key="frame" x="0.0" y="0.0" width="725" height="284"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="44I-nl-g4l">
+                                <rect key="frame" x="0.0" y="0.0" width="725" height="284"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2M-R6-65J">
+                                <rect key="frame" x="15" y="120" width="87" height="44.5"/>
+                                <color key="backgroundColor" name="AcademicSelected"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" alpha="0.14999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2Y-yK-VJP">
+                                <rect key="frame" x="0.0" y="0.0" width="725" height="284"/>
+                                <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="V2M-R6-65J" firstAttribute="leading" secondItem="rfx-DG-Mhe" secondAttribute="leading" constant="15" id="6rk-gn-10h"/>
+                            <constraint firstAttribute="trailing" secondItem="Y2Y-yK-VJP" secondAttribute="trailing" id="9eO-uJ-zds"/>
+                            <constraint firstItem="Y2Y-yK-VJP" firstAttribute="top" secondItem="rfx-DG-Mhe" secondAttribute="top" id="GXd-H6-l9X"/>
+                            <constraint firstItem="V2M-R6-65J" firstAttribute="centerY" secondItem="rfx-DG-Mhe" secondAttribute="centerY" id="XdK-TF-LhH"/>
+                            <constraint firstItem="Y2Y-yK-VJP" firstAttribute="leading" secondItem="rfx-DG-Mhe" secondAttribute="leading" id="bZE-Me-bxH"/>
+                            <constraint firstAttribute="bottom" secondItem="44I-nl-g4l" secondAttribute="bottom" id="fwZ-4v-M2K"/>
+                            <constraint firstItem="44I-nl-g4l" firstAttribute="top" secondItem="rfx-DG-Mhe" secondAttribute="top" id="idC-Qo-oL4"/>
+                            <constraint firstAttribute="bottom" secondItem="Y2Y-yK-VJP" secondAttribute="bottom" id="j6K-j1-L2Y"/>
+                            <constraint firstItem="44I-nl-g4l" firstAttribute="leading" secondItem="rfx-DG-Mhe" secondAttribute="leading" id="lQO-cV-0Kd"/>
+                            <constraint firstAttribute="trailing" secondItem="44I-nl-g4l" secondAttribute="trailing" id="yId-MF-L7L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rfx-DG-Mhe" secondAttribute="bottom" id="N10-h5-hAo"/>
+                <constraint firstAttribute="trailing" secondItem="rfx-DG-Mhe" secondAttribute="trailing" id="VwN-mX-tbJ"/>
+                <constraint firstItem="rfx-DG-Mhe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ctK-cn-9vp"/>
+                <constraint firstItem="rfx-DG-Mhe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gOc-ar-S3B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="725" height="284"/>
+            <connections>
+                <outlet property="debugCount" destination="V2M-R6-65J" id="3jH-Vp-lqS"/>
+                <outlet property="maskButtom" destination="j6K-j1-L2Y" id="8qo-O1-oq7"/>
+                <outlet property="maskCover" destination="Y2Y-yK-VJP" id="mng-T2-7Xr"/>
+                <outlet property="maskLeading" destination="bZE-Me-bxH" id="sCB-bu-39U"/>
+                <outlet property="maskTop" destination="GXd-H6-l9X" id="55q-Zr-nYF"/>
+                <outlet property="maskTrailing" destination="9eO-uJ-zds" id="efq-i5-iIy"/>
+                <outlet property="photoPiece" destination="44I-nl-g4l" id="ht2-xS-71e"/>
+            </connections>
+            <point key="canvasLocation" x="828.26086956521749" y="348.88392857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AcademicSelected">
+            <color red="0.77647058823529413" green="0.42352941176470588" blue="0.52549019607843139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
