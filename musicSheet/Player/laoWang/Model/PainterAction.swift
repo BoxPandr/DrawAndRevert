@@ -85,10 +85,6 @@ struct PaintItem: Codable {
     
     var pos: MyPoint?
     
-    var diffPos: MyPoint?
-    
-    
-    
     init(id k: Int, action num: Int, pointList points: [MyPoint]?, text t: String?, pos p: MyPoint?){
         id = k
         action = num
@@ -96,7 +92,7 @@ struct PaintItem: Codable {
         
         text = t
         pos = p
-        diffPos = nil
+ 
     }
     
 }

@@ -94,11 +94,6 @@ extension PlayerViewController {
                 let y = (pos.y * height) / 10000
                 tempItem.pos = MyPoint(x: x, y: y)
             }
-            if let diffPos = item.diffPos {
-                let x = diffPos.x * width / 10000
-                let y = (diffPos.y * height) / 10000
-                tempItem.diffPos = MyPoint(x: x, y: y)
-            }
             tempList.append(tempItem)
         }
         return tempList
@@ -136,11 +131,6 @@ extension PlayerViewController {
                 let x = pos.x / width
                 let y = pos.y / height
                 tempItem.pos = MyPoint(x: x, y: y)
-            }
-            if let diffPos = item.diffPos {
-                let x = diffPos.x / width
-                let y = diffPos.y / height
-                tempItem.diffPos = MyPoint(x: x, y: y)
             }
             tempList.append(tempItem)
         }
