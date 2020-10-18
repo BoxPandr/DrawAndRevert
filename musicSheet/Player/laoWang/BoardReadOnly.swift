@@ -64,9 +64,9 @@ class BoardReadOnly: UIImageView {
      */
     func drawList(actionList: [PaintItem]) {
         var actionQueue = [PaintItem]()
-        for ca in actionList{
-            if [0, 2].contains(ca.action){
-                actionQueue.append(ca)
+        for behave in actionList{
+            if [0, 2].contains(behave.action){
+                actionQueue.append(behave)
             }
         }
         
@@ -154,7 +154,7 @@ extension BoardReadOnly{
     
     
     func refresh(action items: [PaintItem]){
-        drawEmptyBitch()
+        drawEmptyImg()
         textFieldList.forEach {
             $0.removeFromSuperview()
         }
@@ -165,7 +165,7 @@ extension BoardReadOnly{
     
  
     private
-    func drawEmptyBitch(){
+    func drawEmptyImg(){
         UIGraphicsBeginImageContextWithOptions(self.bounds.size, false, 0)
         self.realImage = UIGraphicsGetImageFromCurrentImageContext()
         UIColor.clear.setFill()
