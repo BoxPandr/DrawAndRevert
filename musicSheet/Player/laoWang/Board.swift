@@ -242,31 +242,7 @@ class BoardX: UIImageView {
         UIGraphicsEndImageContext()
     }
     
-    func drawListItem(brush: Brush, points: [MyPoint]) {
-        brush.beginPoint = points.first
-        
-        brush.lastPoint = nil
-        let context = UIGraphicsGetCurrentContext()!
-        context.setLineCap(.round)
-        context.setLineWidth(brush.strokeWidth)
-        context.setStrokeColor(brush.strokeColor.cgColor)
- 
-        for point in points {
-            brush.endPoint = point
-            
-            if let realImage = self.realImage {
-                realImage.draw(in: self.bounds)
-            }
-            // 4.
-            brush.drawInContext(context: context);
-            context.strokePath()
-            // 5.
-            
-            brush.lastPoint = brush.endPoint
-        }
-        self.realImage = UIGraphicsGetImageFromCurrentImageContext()
-        
-    }
+  
     
 }
 
